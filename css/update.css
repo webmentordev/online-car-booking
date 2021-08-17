@@ -1,0 +1,215 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #EEF4F7;
+}
+
+section {
+  width: 100%;
+}
+
+section .container {
+  width: 80%;
+  padding: 20px 1em;
+  margin: auto;
+  overflow: hidden;
+}
+
+.nav {
+  height: 100%;
+  background-color: #05163A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .title {
+  color: white;
+  text-align: center;
+  padding: 12px 1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.nav .title a {
+  color: white;
+}
+
+.nav ul {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav ul button {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  text-align: start;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.nav ul button a {
+  color: white;
+}
+
+.nav ul button i {
+  margin: 0px 10px;
+}
+
+.nav ul button .logout {
+  padding: 8px 20px;
+  background-color: #D81E2A;
+  border-radius: 5px;
+}
+
+.form {
+  background-color: #EEF4F7;
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 1em;
+}
+
+.form form {
+  border-radius: 10px;
+  border-top: 5px #05163A solid;
+  border-bottom: 5px #05163A solid;
+  padding: 50px 30px;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form form .img {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form form .img #blah {
+  width: 300px;
+  margin: auto;
+}
+
+.form form .success {
+  background-color: #0b7514;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form form .success i {
+  margin-left: 5px;
+}
+
+.form form .errors {
+  background-color: #ff00006e;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  list-style: none;
+  border: 3px #750808 solid;
+}
+
+.form form .errors li {
+  margin: 10px 0px;
+}
+
+.form form input,
+.form form textarea,
+.form form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  border: 1px #b6b6b6 solid;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  resize: none;
+}
+
+.form form input::-webkit-input-placeholder,
+.form form textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.form form input:-ms-input-placeholder,
+.form form textarea:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.form form input::-ms-input-placeholder,
+.form form textarea::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.form form input::placeholder,
+.form form textarea::placeholder {
+  color: #cccccc;
+}
+
+.form form button {
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  background-color: #05163A;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=update.css.map */

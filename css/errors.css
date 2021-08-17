@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box {
+  background-color: #141520;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.box .flex h1 {
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.box .flex h1 span {
+  font-weight: 700;
+}
+/*# sourceMappingURL=errors.css.map */

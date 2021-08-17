@@ -1,0 +1,1156 @@
+$txtColor: #4c4c52;
+$darkColor: #222227;
+$red: #D81E2A;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    width: 100%;
+    .container {
+        width: 80%;
+        padding: 20px 1em;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+
+
+/*=============================*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 88;
+    border: none;
+    outline: none;
+    background-color: $red;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+}
+
+
+/*=============================*/
+
+.nav {
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17)!important;
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 1.5em;
+        h1 {
+            a {
+                color: #333;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+        }
+        ul {
+            padding: 5px 0px;
+            a {
+                font-weight: 500 !important;
+                padding: 0px 15px;
+                color: $txtColor;
+            }
+            .active {
+                font-weight: 600 !important;
+            }
+            .left-link {
+                display: inline;
+                border-right: 1px rgb(148, 148, 148) solid;
+            }
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            font-size: 25px;
+            display: none;
+        }
+    }
+}
+
+.sidebar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transform: translateY(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    .box {
+        width: 100%;
+        height: 100%;
+        padding: 10px 1em;
+        .left-link {
+            border-right: 1px rgb(148, 148, 148) solid;
+        }
+        button {
+            top: 0px;
+            left: 20px;
+            padding: 10px;
+            background-color: #d1d1d1;
+            border-radius: 50px;
+            border: none;
+        }
+        ul {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            a {
+                margin: 15px 0px;
+                font-size: 1.5rem;
+                color: #212124;
+            }
+            p {
+                a {
+                    padding: 0px 20px;
+                }
+            }
+        }
+    }
+}
+
+
+/*=============================*/
+
+.header {
+    height: 950px;
+    position: relative;
+    background-image: linear-gradient(180deg, rgba(27, 31, 37, 0) 0%, #1b1f25 100%), url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/car-dealer-24.jpg)!important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .overlay-box {
+        position: absolute;
+        height: 950px;
+        width: 900px;
+        background-color: black;
+        z-index: 1;
+        left: 15%;
+        opacity: 0.1;
+    }
+    .container {
+        position: relative;
+        max-width: 1500px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .details {
+            h1 {
+                letter-spacing: 8px;
+                margin-bottom: 50px;
+                font-weight: 600;
+            }
+            .inner-box {
+                margin-left: 100px;
+                .title {
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 9rem;
+                    font-family: 'Teko', sans-serif;
+                    font-weight: 500;
+                    letter-spacing: 0.05em;
+                    line-height: 150px;
+                }
+                .quote {
+                    color: white;
+                    margin-bottom: 100px;
+                    font-size: 15px;
+                }
+                a {
+                    color: white;
+                    background-color: $red;
+                    padding: 20px 50px;
+                    font-family: 'Teko', sans-serif;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+/*=============================*/
+
+.about {
+    width: 100%;
+    .container {
+        display: flex;
+        max-width: 1300px;
+        text-align: center;
+        padding: 0px 1em;
+        color: white;
+        i {
+            font-size: 50px;
+            color: #65656d;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 33px;
+            margin-bottom: 10px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+        p {
+            font-weight: 300;
+            max-width: 500px;
+            margin: auto;
+            font-size: 14px;
+            line-height: 30px;
+            margin-bottom: 35px;
+        }
+        .button {
+            bottom: 0px;
+            background-color: white;
+            z-index: 2;
+            color: $red;
+            padding: 15px 50px;
+            box-shadow: 0px 30px 110px 14px rgba(152, 165, 181, 0.5);
+            text-transform: uppercase;
+            font-weight: 800;
+            i {
+                font-size: 15px;
+                color: $red;
+                margin-left: 10px;
+            }
+        }
+        .box-1 {
+            background-color: #2C3039;
+            width: 100%;
+            padding: 100px 30px;
+            position: relative;
+            .bottom-1 {
+                height: 50px;
+                background-color: white;
+                width: 102%;
+                position: absolute;
+                bottom: -20px;
+                left: -6px;
+                transform: rotate(3deg);
+            }
+        }
+        .box-2 {
+            background-color: #21262C;
+            width: 100%;
+            padding: 100px 30px;
+            position: relative;
+            .bottom-2 {
+                height: 50px;
+                background-color: white;
+                width: 102%;
+                position: absolute;
+                bottom: -20px;
+                right: -6px;
+                transform: rotate(-3deg);
+            }
+        }
+    }
+}
+
+
+/*=============================*/
+
+.services {
+    width: 100%;
+    position: relative;
+    /*background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 53%, rgba(255, 255, 255, 0.2) 94%, rgba(255, 255, 255, 0.1) 100%), url('../img/tesla.jpg')!important;*/
+    background-image: url('../img/carback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .bottom-img {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+    .container {
+        padding: 100px 1em;
+        text-align: center;
+        .title {
+            font-size: 5vw;
+            color: $darkColor;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            .box {
+                padding: 30px 0px;
+                h1 {
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                    color: #4c4c52;
+                }
+                a {
+                    color: $red;
+                    font-weight: 800;
+                    letter-spacing: 2px;
+                    i {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*=============================*/
+
+.inventory {
+    width: 100%;
+    .container {
+        padding: 10px 1em;
+        text-align: center;
+        .box {
+            color: $darkColor;
+            .title {
+                font-size: 5vw;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .view-all {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            background-color: $red;
+            padding: 10px 30px;
+            font-weight: 800;
+            i {
+                margin-left: 10px;
+            }
+        }
+        .filter {
+            form {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 20px;
+                padding: 20px 0px;
+                select {
+                    padding: 10px 15px;
+                    border: none;
+                    border: 1px rgb(212, 212, 212) solid;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 18px;
+                    border-radius: 8px;
+                }
+                button {
+                    background-color: $red;
+                    color: white;
+                    font-family: 'Teko', sans-serif;
+                    font-weight: 500;
+                    border: none;
+                    padding: 10px 40px;
+                    font-size: 18px;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            padding: 50px 0px;
+            .box {
+                position: relative;
+                .ordernow {
+                    background-color: $red;
+                    border-radius: 2px;
+                    color: white;
+                    display: inline;
+                    padding: 10px 20px;
+                }
+                .overlay {
+                    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+                    position: absolute;
+                    height: 150px;
+                    top: 0px;
+                    width: 100%;
+                    z-index: 1;
+                }
+                .img {
+                    position: relative;
+                    h2 {
+                        padding: 5px 10px;
+                        color: white;
+                        background-color: $red;
+                        position: absolute;
+                        bottom: 27px;
+                        z-index: 10;
+                    }
+                    img {
+                        width: 100%;
+                        position: relative;
+                        margin-bottom: 20px;
+                    }
+                }
+                .details {
+                    h1 {
+                        font-size: 25px;
+                        letter-spacing: 5px;
+                        font-weight: 800;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+                        span {
+                            text-transform: uppercase;
+                        }
+                    }
+                    h2 {
+                        color: $red;
+                        margin-bottom: 10px;
+                    }
+                }
+                .collapsible {
+                    background-color: #f5f5f5;
+                    color: #6d6d6d;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    padding: 10px 10px;
+                    width: 90%;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    font-size: 13px;
+                    font-family: 'Poppins', sans-serif;
+                    letter-spacing: 5px;
+                    font-weight: 800;
+                    margin-bottom: 20px;
+                    i {
+                        float: right;
+                        font-size: 16px;
+                        margin-top: 3px;
+                    }
+                }
+                .content {
+                    padding: 0 18px;
+                    display: none;
+                    overflow: hidden;
+                    background-color: #f1f1f1;
+                    text-align: start;
+                    width: 90%;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    ul {
+                        padding: 0px 10px;
+                        list-style: none;
+                        li {
+                            margin: 20px 0px;
+                            color: #6d6d6d;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*=============================*/
+
+.financing {
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(27, 31, 37, 0.3) 0%, #1b1f25 100%), url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/car-dealer-26.jpg)!important;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .top-asset {
+        left: 0px;
+        top: -1px;
+        width: 100%;
+        position: absolute;
+    }
+    .container {
+        padding: 200px 1em;
+        text-align: center;
+        max-width: 1200px;
+        position: relative;
+        .title {
+            font-size: 5rem;
+            color: white;
+        }
+    }
+}
+
+
+/*=============================*/
+
+.brands {
+    width: 100%;
+    .container {
+        padding: 50px 1em;
+        text-align: center;
+        max-width: 1200px;
+        .box {
+            color: $darkColor;
+            .title {
+                font-size: 5vw;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            padding: 100px 0px;
+            i {
+                font-size: 4.5vw;
+                color: rgb(214, 214, 214);
+                transition: 0.5s ease;
+            }
+            i:hover {
+                color: #555;
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+
+
+/*=============================*/
+
+.contact {
+    width: 100%;
+    background-color: $red;
+    position: relative;
+    .bottom-img {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        z-index: 2;
+    }
+    .container {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        .box-1 {
+            width: 100%;
+            padding: 100px 100px;
+            background-image: linear-gradient(180deg, rgba(24, 30, 36, 0.9) 0%, rgba(213, 26, 39, 0.69) 100%), url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/06/car-dealer-34.jpg)!important;
+            background-size: cover;
+            position: relative;
+            .overlay-box {
+                position: absolute;
+                top: -2px;
+                left: 0%;
+                height: 80px;
+                background-color: white;
+                width: 100%;
+            }
+            .inner {
+                color: white;
+                max-width: 500px;
+                h1 {
+                    font-size: 5vw;
+                }
+                h2 {
+                    font-size: 2vw;
+                }
+                .flex {
+                    display: flex;
+                    justify-content: space-between;
+                    ul {
+                        list-style: none;
+                        li {
+                            font-size: 15px;
+                            margin: 10px 0px;
+                            span {
+                                strong {
+                                    font-family: 'Teko', sans-serif;
+                                    font-weight: 600;
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                        .gap {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .box-2 {
+            width: 100%;
+            padding: 100px;
+            h1 {
+                color: white;
+                font-size: 2.5rem;
+            }
+            form {
+                width: 80%;
+                .errors {
+                    list-style: none;
+                    background-color: #4d070b;
+                    padding: 5px 20px;
+                    color: white;
+                    margin-bottom: 5px;
+                    li {
+                        margin: 10px 0px;
+                    }
+                }
+                .success {
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 5px;
+                    background-color: #4a9e29;
+                }
+                input,
+                textarea {
+                    width: 100%;
+                    background-color: #A40D17;
+                    border: none;
+                    padding: 15px;
+                    margin-bottom: 20px;
+                    color: white;
+                    font-family: 'Poppins', sans-serif;
+                    resize: none;
+                }
+                input::placeholder,
+                textarea::placeholder {
+                    color: #e2e2e2;
+                }
+                button {
+                    color: $red;
+                    background-color: white;
+                    padding: 15px 40px;
+                    font-family: 'Teko', sans-serif;
+                    border: none;
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
+/*=============================*/
+
+.footer {
+    width: 100%;
+    background-color: #212124;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        color: #65656d;
+        p {
+            padding-top: 10px;
+            a {
+                color: #65656d;
+                text-decoration: underline;
+            }
+        }
+        ul {
+            a {
+                color: #65656d;
+                margin: 0px 20px;
+                font-size: 22px;
+            }
+        }
+        .payment {
+            i {
+                font-size: 30px;
+                margin: 0px 10px;
+            }
+        }
+    }
+}
+
+
+/*=====================================
+======================================
+======================================
+======================================
+=====================================*/
+
+@media screen and (max-width: 1110px) {
+    .header {
+        height: 100%;
+        padding: 100px 0px;
+        .overlay-box {
+            display: none;
+        }
+        .container {
+            .details {
+                .inner-box {
+                    margin: 0px;
+                    .title {
+                        font-size: 5rem;
+                        line-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .inventory {
+        .container {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    .financing {
+        .top-asset {
+            display: block;
+        }
+        .container {
+            padding: 100px 1em;
+            .title {
+                font-size: 5rem;
+                color: white;
+            }
+        }
+    }
+    .brands {
+        .container {
+            padding: 50px 1em;
+            .box {
+                .title {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+            .grid {
+                grid-template-columns: repeat(4, 1fr);
+                i {
+                    font-size: 4rem;
+                    color: rgb(214, 214, 214);
+                    transition: 0.5s ease;
+                }
+            }
+        }
+    }
+    .contact {
+        .bottom-img {
+            display: none;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            .box-1 {
+                .overlay-box {
+                    position: absolute;
+                }
+                .inner {
+                    .flex {
+                        flex-direction: column;
+                    }
+                }
+            }
+            .box-2 {
+                width: 100%;
+                padding: 50px;
+                button {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+    .footer {
+        .container {
+            flex-direction: column;
+            text-align: center;
+            padding: 50px 1em;
+            p {
+                margin-bottom: 30px;
+            }
+            ul {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .nav {
+        .container {
+            .res-btn {
+                display: none;
+            }
+            button {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .header {
+        .container {
+            width: 95%;
+            .details {
+                .inner-box {
+                    .title {
+                        font-size: 4rem;
+                        line-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        width: 100%;
+        .container {
+            width: 80%;
+            padding: 0px;
+            flex-direction: column;
+            .button {
+                bottom: 0px;
+                padding: 10px 40px;
+                i {
+                    font-size: 15px;
+                    color: $red;
+                    margin-left: 10px;
+                }
+            }
+            .box-1 {
+                padding: 50px 1em;
+                .bottom-1 {
+                    display: none;
+                }
+            }
+            .box-2 {
+                padding: 50px 1em;
+                .bottom-2 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .services {
+        .bottom-img {
+            display: none;
+        }
+        .container {
+            padding: 100px 1em;
+            text-align: center;
+            width: 100%;
+            .title {
+                font-size: 4rem;
+                color: $darkColor;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    .inventory {
+        .container {
+            width: 100%;
+            .box {
+                .title {
+                    font-size: 5rem;
+                }
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+    .financing {
+        .top-asset {
+            display: block;
+        }
+        .container {
+            padding: 100px 1em;
+            .title {
+                font-size: 4rem;
+                color: white;
+            }
+        }
+    }
+    .brands {
+        .container {
+            padding: 50px 1em;
+            .box {
+                .title {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+                i {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+    .contact {
+        .container {
+            flex-direction: column;
+            .box-1 {
+                .overlay-box {
+                    position: absolute;
+                    display: none;
+                }
+                .inner {
+                    .flex {
+                        flex-direction: row;
+                    }
+                }
+            }
+            .box-2 {
+                width: 100%;
+                padding: 50px 1em;
+                form {
+                    width: 100%;
+                    button {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .header {
+        .container {
+            width: 95%;
+            .details {
+                .inner-box {
+                    .title {
+                        font-size: 3rem;
+                        line-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        width: 100%;
+        .container {
+            width: 100%;
+        }
+    }
+    .services {
+        .bottom-img {
+            display: none;
+        }
+        .container {
+            padding: 100px 1em;
+            .title {
+                font-size: 3rem;
+            }
+            .grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+    .contact {
+        .container {
+            .box-1 {
+                padding: 50px 1em;
+                .inner {
+                    width: 100%;
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    .flex {
+                        flex-direction: column;
+                    }
+                }
+            }
+            .box-2 {
+                width: 100%;
+                padding: 50px;
+                button {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        .container {
+            width: 95%;
+            .details {
+                .inner-box {
+                    .title {
+                        font-size: 3rem;
+                        line-height: 70px;
+                    }
+                    a {
+                        padding: 10px 20px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        width: 100%;
+        .container {
+            width: 100%;
+        }
+    }
+    .services {
+        .bottom-img {
+            display: none;
+        }
+        .container {
+            padding: 100px 1em;
+            .title {
+                font-size: 3rem;
+            }
+            .grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+    .brands {
+        .container {
+            padding: 50px 1em;
+            .box {
+                .title {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+                i {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+    .contact {
+        .container {
+            .box-1 {
+                padding: 50px 1em;
+                .inner {
+                    width: 100%;
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    .flex {
+                        flex-direction: column;
+                    }
+                }
+            }
+            .box-2 {
+                width: 100%;
+                padding: 50px;
+                button {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .contact {
+        .container {
+            .box-1 {
+                padding: 50px 1em;
+                .inner {
+                    width: 100%;
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    .flex {
+                        flex-direction: column;
+                    }
+                }
+            }
+            .box-2 {
+                width: 100%;
+                padding: 50px 1em;
+                button {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
